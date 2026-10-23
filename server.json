@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.openshopgraph/mcp",
+  "title": "OpenShopGraph",
+  "description": "Source-dated facts about online shops for AI agents: returns, shipping, payment methods and trust signals.",
+  "websiteUrl": "https://openshopgraph.com",
+  "version": "0.1.1",
+  "icons": [
+    {
+      "src": "https://openshopgraph.com/icon.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.openshopgraph.com/mcp",
+      "headers": [
+        {
+          "name": "x-api-token",
+          "description": "Optional operator key. Not needed for the public read-only tools; anonymous clients see only those.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

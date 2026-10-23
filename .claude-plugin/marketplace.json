@@ -1,0 +1,14 @@
+{
+  "name": "openshopgraph",
+  "description": "OpenShopGraph: source-dated facts about online shops for AI agents",
+  "owner": {
+    "name": "OpenShopGraph"
+  },
+  "plugins": [
+    {
+      "name": "openshopgraph",
+      "source": "./",
+      "description": "Remote MCP server with source-dated return, shipping and payment facts and trust signals for online shops; coupons as an extra."
+    }
+  ]
+}

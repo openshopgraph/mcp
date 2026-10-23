@@ -1,0 +1,15 @@
+{
+  "name": "openshopgraph",
+  "displayName": "OpenShopGraph",
+  "version": "0.1.1",
+  "description": "Neutral fact layer over online shops: return windows, shipping, payment methods and trust signals with source and check date. Coupons as an extra.",
+  "homepage": "https://openshopgraph.com",
+  "repository": "https://github.com/openshopgraph/mcp",
+  "license": "MIT",
+  "mcpServers": {
+    "openshopgraph": {
+      "type": "http",
+      "url": "https://api.openshopgraph.com/mcp"
+    }
+  }
+}
