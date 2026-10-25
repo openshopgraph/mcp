@@ -109,4 +109,4 @@ Every fact carries `checked_at` and `source`. A fact that was not collected says
 
 ## License
 
-Code: MIT. Data: CC BY 4.0, attribute "OpenShopGraph, https://openshopgraph.com". See [LICENSE](LICENSE).
+Code: MIT. Data: CC BY 4.0, attribute "OpenShopGraph, https://openshopgraph.com". See [LICENSE](LICENSE) (code) and [DATA-LICENSE.md](DATA-LICENSE.md) (data).
