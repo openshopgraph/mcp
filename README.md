@@ -80,6 +80,26 @@ ChatGPT: enable developer mode, add a custom MCP connector, URL `https://api.ope
 
 With a key, add the header `x-api-token: <your key>` where your client supports custom headers.
 
+## Use via npx
+
+For MCP clients without HTTP transport. The package `@openshopgraph/mcp` is a small stdio bridge: it forwards every JSON-RPC message unchanged to `https://api.openshopgraph.com/mcp` and back. No telemetry, no local state.
+
+```bash
+npx -y @openshopgraph/mcp
+```
+
+Client config:
+
+```json
+{
+  "mcpServers": {
+    "openshopgraph": { "command": "npx", "args": ["-y", "@openshopgraph/mcp"] }
+  }
+}
+```
+
+Optional environment variables: `OSG_API_TOKEN` (operator key, sent as `x-api-token`), `OSG_TIMEOUT_MS` (per HTTP request, default 60000), `OSG_MCP_URL` (endpoint override, for testing). If the server is unreachable during `initialize`, the bridge prints a clear error to stderr and exits with code 1. Tests: `npm install && npm test` (needs network; runs against the live server).
+
 ## Ready-to-use client examples
 
 Remote URL only, no keys. Each file was checked against the framework's own documentation on 2026-10-28.
