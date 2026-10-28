@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "openshopgraph": {
+      "command": "npx",
+      "args": ["mcp-remote", "https://api.openshopgraph.com/mcp"]
+    }
+  }
+}

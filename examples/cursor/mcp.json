@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "openshopgraph": { "url": "https://api.openshopgraph.com/mcp" }
+  }
+}
