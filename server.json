@@ -2,9 +2,9 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.openshopgraph/mcp",
   "title": "OpenShopGraph",
-  "description": "Source-dated facts about online shops for AI agents: returns, shipping, payment methods and trust signals.",
+  "description": "Source-dated facts on online shops for AI agents and buyers: returns, shipping, payment, trust.",
   "websiteUrl": "https://openshopgraph.com",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "icons": [
     {
       "src": "https://openshopgraph.com/icon.png",
