@@ -1,11 +1,11 @@
 # OpenShopGraph MCP
 
-A neutral fact layer over online shops for AI agents. Read-only lookups of what a shop states about returns, shipping and payment methods, plus trust signals, each with its source and check date where one exists. Missing data is reported as missing, not guessed. Discount codes are an extra, not the point.
+A neutral fact layer over online shops for AI agents and buyers. Read-only lookups of what a shop states about returns, shipping and payment methods, plus trust signals, each with its source and check date where one exists. Missing data is reported as missing, not guessed. Discount codes are an extra, not the point. No products, no price comparison.
 
 - Endpoint: `https://api.openshopgraph.com/mcp` (MCP streamable HTTP)
 - Registry ID: `com.openshopgraph/mcp` (official MCP Registry)
 - Homepage: https://openshopgraph.com
-- Coverage: about 1,500 shops with sourced data (live count on https://openshopgraph.com)
+- Coverage: the live shop count is on https://openshopgraph.com
 - Privacy: https://openshopgraph.com/en/privacy/ · Imprint: https://openshopgraph.com/en/imprint/ · Terms: https://openshopgraph.com/en/terms/
 
 ## Tools
