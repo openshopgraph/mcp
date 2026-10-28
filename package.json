@@ -1,0 +1,19 @@
+{
+  "name": "@openshopgraph/mcp",
+  "version": "0.1.3",
+  "mcpName": "com.openshopgraph/mcp",
+  "description": "stdio bridge to the OpenShopGraph remote MCP server (returns, shipping, payment, trust facts on online shops).",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "openshopgraph-mcp": "bin/openshopgraph-mcp.js"
+  },
+  "files": ["bin", "LICENSE", "DATA-LICENSE.md", "README.md"],
+  "engines": { "node": ">=18" },
+  "keywords": ["mcp", "model-context-protocol", "shopping", "ecommerce", "returns", "shipping", "trust"],
+  "repository": { "type": "git", "url": "git+https://github.com/openshopgraph/mcp.git" },
+  "homepage": "https://openshopgraph.com",
+  "bugs": { "url": "https://github.com/openshopgraph/mcp/issues" },
+  "scripts": { "test": "node --test test/" },
+  "dependencies": { "@modelcontextprotocol/sdk": "1.32.2" }
+}

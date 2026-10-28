@@ -4,13 +4,31 @@
   "title": "OpenShopGraph",
   "description": "Source-dated facts on online shops for AI agents and buyers: returns, shipping, payment, trust.",
   "websiteUrl": "https://openshopgraph.com",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "icons": [
     {
       "src": "https://openshopgraph.com/icon.png",
       "mimeType": "image/png",
       "sizes": [
         "512x512"
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@openshopgraph/mcp",
+      "version": "0.1.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "OSG_API_TOKEN",
+          "description": "Optional operator key. Not needed for the public read-only tools.",
+          "isRequired": false,
+          "isSecret": true
+        }
       ]
     }
   ],
