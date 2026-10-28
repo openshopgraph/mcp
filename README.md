@@ -80,6 +80,18 @@ ChatGPT: enable developer mode, add a custom MCP connector, URL `https://api.ope
 
 With a key, add the header `x-api-token: <your key>` where your client supports custom headers.
 
+## Ready-to-use client examples
+
+Remote URL only, no keys. Each file was checked against the framework's own documentation on 2026-10-28.
+
+| Client | File | Notes |
+|---|---|---|
+| Claude Desktop | [`examples/claude-desktop/claude_desktop_config.json`](examples/claude-desktop/claude_desktop_config.json) | via `mcp-remote`; alternatively Settings, Connectors, Add custom connector, URL `https://api.openshopgraph.com/mcp` |
+| Cursor | [`examples/cursor/mcp.json`](examples/cursor/mcp.json) | `.cursor/mcp.json`, top-level `mcpServers`, `url` |
+| VS Code | [`examples/vscode/mcp.json`](examples/vscode/mcp.json) | `.vscode/mcp.json`, top-level `servers`, `"type": "http"` |
+| OpenAI Agents SDK (Python) | [`examples/openai-agents-sdk/agent.py`](examples/openai-agents-sdk/agent.py) | `MCPServerStreamableHttp` |
+| LangChain (Python) | [`examples/langchain/agent.py`](examples/langchain/agent.py) | `langchain-mcp-adapters`, `MultiServerMCPClient`, `"transport": "http"` |
+
 ## Example
 
 Request (JSON-RPC over streamable HTTP, no key):
